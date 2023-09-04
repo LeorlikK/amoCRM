@@ -2,9 +2,10 @@
 
 namespace App\Services;
 
+use App\Services\Interfaces\AmoLead;
 use Illuminate\Support\Facades\File;
 
-class AmoLeadService
+class AmoLeadService implements AmoLead
 {
     public function getLeads(): array
     {

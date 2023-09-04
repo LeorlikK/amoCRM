@@ -2,12 +2,13 @@
 
 namespace App\Services;
 
+use App\Services\Interfaces\AmoToken;
 use HttpException;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 
-class AmoTokenService
+class AmoTokenService implements AmoToken
 {
     public ?string $access_token;
     public ?string $refresh_token;

@@ -8,9 +8,10 @@ use AmoCRM\Models\CustomFieldsValues\NumericCustomFieldValuesModel;
 use AmoCRM\Models\CustomFieldsValues\ValueCollections\NumericCustomFieldValueCollection;
 use AmoCRM\Models\CustomFieldsValues\ValueModels\NumericCustomFieldValueModel;
 use AmoCRM\Models\LeadModel;
+use App\Services\Interfaces\AmoClient;
 use League\OAuth2\Client\Token\AccessToken;
 
-class AmoClientService
+class AmoClientService implements AmoClient
 {
     public AmoCRMApiClient $apiClient;
     public string $profitFieldId;
