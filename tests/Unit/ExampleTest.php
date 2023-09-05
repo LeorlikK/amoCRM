@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Services\AmoClientService;
+use App\Services\AmoService;
 use PHPUnit\Framework\TestCase;
 use AmoCRM\Models\LeadModel;
 

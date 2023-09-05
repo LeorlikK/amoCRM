@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AmoLeadController;
-use App\Services\AmoClientService;
+use App\Services\AmoService;
 use App\Services\AmoTokenService;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::match(['get', 'post'], '/token', function () {
+Route::match(['get', 'post'], '/authorization', function () {
     include '../resources/views/tokens/authorization.php';
 });
 

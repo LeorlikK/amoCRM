@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use AmoCRM\Exceptions\AmoCRMApiException;
 use AmoCRM\Exceptions\AmoCRMMissedTokenException;
 use AmoCRM\Exceptions\AmoCRMoAuthApiException;
-use App\Services\AmoClientService;
+use App\Services\AmoService;
 
 class AmoLeadController extends Controller
 {
@@ -14,7 +14,7 @@ class AmoLeadController extends Controller
      * @throws AmoCRMMissedTokenException
      * @throws AmoCRMoAuthApiException
      */
-    public function changeLead(AmoClientService $service)
+    public function changeLead(AmoService $service)
     {
         $updates = request()->input('leads.update') ?? request()->input('leads.add');
 

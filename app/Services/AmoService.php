@@ -11,7 +11,7 @@ use AmoCRM\Models\LeadModel;
 use App\Services\Interfaces\AmoClient;
 use League\OAuth2\Client\Token\AccessToken;
 
-class AmoClientService implements AmoClient
+class AmoService implements AmoClient
 {
     public AmoCRMApiClient $apiClient;
     public string $profitFieldId;
