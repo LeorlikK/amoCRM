@@ -5,7 +5,7 @@
 - password=pqsd137zh12e9e
 
 ## Routes:
-- **WebHook**: api/change-lead(POST)
+- **WebHook**: /api/change-lead(POST)
 - **Authorization**: /authorization(GET/POST)
 
 ## Services:
